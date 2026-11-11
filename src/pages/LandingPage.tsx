@@ -5,7 +5,7 @@ import {
   DraggableCardBody,
   DraggableCardContainer,
 } from '~/components/ui/draggable-card';
-import { TextHoverEffect } from "~/components/ui/text-hover-effect";
+//import { TextHoverEffect } from "~/components/ui/text-hover-effect";
 
 export default function LandingPage() {
   const items = [
@@ -99,7 +99,13 @@ export default function LandingPage() {
 
         <div>
           {/*Projects, Manifesto, (and) Team */}
-          
+          <p>
+            {/* <a className="pLanguages" href="https://www.java.com/">Projects</a> |
+            <a className="pLanguages" href="https://www.java.com/">Manifesto</a> |
+            <a className="pLanguages" href="https://www.java.com/">Team</a> */}
+
+            {/* <p><Link to='/projects'>Projects</Link> | <Link to='/manifesto'>Manifesto</Link> | <Link to='/team'>Team</Link></p> */}
+          </p>
         </div>
         
         <div>
@@ -130,7 +136,7 @@ export default function LandingPage() {
          </div>
 
         <div>
-          
+          {/*For the footer section later then...*/}
         </div>
         
       </div>
