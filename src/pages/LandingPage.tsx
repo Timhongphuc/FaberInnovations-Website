@@ -1,5 +1,6 @@
-//import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import GradientASCII from '~/components/GradientASCII';
+import { BarcodeLogo } from '~/components/BarcodeLogo';
 //import blackwhiteGarden from "../assets/bwg.jpg";
 import {
   DraggableCardBody,
@@ -83,7 +84,9 @@ export default function LandingPage() {
         </div>
 
         <header className="absolute top-0 z-10 flex w-full items-center justify-between px-6 py-4">
-          <span className="text-2xl font-bold text-white">StemBase</span>
+          {/* Barcode logo — one shared component (src/components/BarcodeLogo.tsx).
+              Clicking it returns to the homepage. */}
+          <BarcodeLogo />
           {/*<Link
             to="/login"
             className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 transition"
@@ -105,7 +108,33 @@ export default function LandingPage() {
             <a className="pLanguages" href="https://www.java.com/">Team</a> */}
 
             {/* <p><Link to='/projects'>Projects</Link> | <Link to='/manifesto'>Manifesto</Link> | <Link to='/team'>Team</Link></p> */}
+
+            
           </p>
+        </div>
+
+        {/* SUBTLE NAVBAR — your attempt 2 was the right pattern all along:
+            - <nav>  = semantic element, screen readers/SEO expect it
+            - <Link> = react-router: swaps views WITHOUT a page reload
+            - relative + z-10 = same reason .mainhead has them: without
+              it, the absolutely positioned ASCII background would paint
+              ON TOP of the links (they'd be invisible!)
+            Subtle look: small text, white at 50% opacity, no borders,
+            brightens to full white only on hover. */}
+        <nav className="relative z-10 mt-67 flex justify-center gap-8 text-base text-white/50">
+          <Link to="/projects" className="transition hover:text-white">
+            Projects
+          </Link>
+          <Link to="/manifesto" className="transition hover:text-white">
+            Manifesto
+          </Link>
+          <Link to="/team" className="transition hover:text-white">
+            Team
+          </Link>
+        </nav>
+
+        <div>
+          
         </div>
         
         <div>

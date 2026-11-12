@@ -183,6 +183,18 @@
 }
 
 /*
+ * Barcode logo font — "Libre Barcode 128" (Google Fonts).
+ * Fun CSS fact: this font maps every character to real barcode bars,
+ * so any text set in it becomes a scannable Code-128 barcode!
+ * (Loaded via <link> in index.html.)
+ */
+.barcode-logo {
+    font-family: "Libre Barcode 128", system-ui;
+    font-weight: 400;   /* barcodes want the regular weight — bold fudges the bars */
+    font-style: normal;
+}
+
+/*
  * Park photo on the landing page.
  *
  * The raw photo (bwg.jpg) is usually far larger than the screen, so
