@@ -168,7 +168,7 @@ export default function LandingPage() {
                 craftsman, smith — one who builds things with their own hands.
               </li>
               <li>
-                StemBase sense: the one who ships what others only sketch.
+                Faber Innovations sense: the one who ships what others only sketch.
               </li>
             </ol>
           </div>
