@@ -1,4 +1,5 @@
 import { BarcodeLogo } from "~/components/BarcodeLogo";
+import { SiteFooter } from "~/components/SiteFooter";
 
 /*
  * MANIFESTO PAGE — same visual language as Team:
@@ -65,6 +66,8 @@ export default function Manifesto() {
           ))}
         </ol>
       </section>
+
+      <SiteFooter />
     </div>
   );
 }

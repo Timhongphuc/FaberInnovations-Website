@@ -1,4 +1,5 @@
 import { BarcodeLogo } from "~/components/BarcodeLogo";
+import { SiteFooter } from "~/components/SiteFooter";
 
 /*
  * PROJECTS PAGE — same visual language as Team:
@@ -81,6 +82,8 @@ export default function Projects() {
           ))}
         </div>
       </section>
+
+      <SiteFooter />
     </div>
   );
 }

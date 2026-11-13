@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import GradientASCII from '~/components/GradientASCII';
 import { BarcodeLogo } from '~/components/BarcodeLogo';
 import { Reveal } from '~/components/Reveal';
+import { SiteFooter } from '~/components/SiteFooter';
 //import blackwhiteGarden from "../assets/bwg.jpg";
 import {
   DraggableCardBody,
@@ -38,9 +39,15 @@ export default function LandingPage() {
     ];
   
   return (
-    <div className="relative min-h-screen">
+    <div className="relative min-h-screen bg-black">
 
-      <div className="h-screen w-full pt-[120px]"> {/* pt instead of margin on .mainhead! */}
+      {/* HERO — exactly ONE screen (h-screen, not min-h-screen!).
+          The ASCII background below is "absolute inset-0" anchored to THIS
+          section, so the horizon art always fills exactly the first
+          viewport and never stretches down the page. Everything after it
+          (definition, cards, footer) sits in normal flow BELOW the hero,
+          on the outer div's bg-black — like the subpages. */}
+      <div className="relative h-screen w-full pt-[120px]"> {/* pt instead of margin on .mainhead! */}
         {/*
           FIX: The ASCII background used to sit in normal flow and take up
           the full screen height, which pushed .mainhead below the visible
@@ -133,6 +140,7 @@ export default function LandingPage() {
             Team
           </Link>
         </nav>
+      </div>{/* HERO ends — definition, cards and footer scroll past it. */}
 
         {/* DEFINITION SECTION — dictionary-style entry for "faber",
             revealed only when the user scrolls to it (<Reveal> below).
@@ -200,11 +208,11 @@ export default function LandingPage() {
          </div>
         </Reveal>
 
-        <div>
-          {/*For the footer section later then...*/}
-        </div>
-        
-      </div>
+        {/* The footer placeholder from before — finally filled in.
+            It sits in normal flow BELOW the hero now, exactly like the
+            subpages, so its spacing just works with no extra padding. */}
+        <SiteFooter />
+
     </div>
   );
 }

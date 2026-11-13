@@ -1,4 +1,5 @@
 import { BarcodeLogo } from "~/components/BarcodeLogo";
+import { SiteFooter } from "~/components/SiteFooter";
 import Lanyard from "~/components/ui/Lanyard";
 
 /*
@@ -85,6 +86,8 @@ export default function Team() {
           </div>
         ))}
       </section>
+
+      <SiteFooter />
     </div>
   );
 }
