@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
 import GradientASCII from '~/components/GradientASCII';
 import { BarcodeLogo } from '~/components/BarcodeLogo';
+import { Reveal } from '~/components/Reveal';
+import { SiteFooter } from '~/components/SiteFooter';
 //import blackwhiteGarden from "../assets/bwg.jpg";
 import {
   DraggableCardBody,
@@ -37,9 +39,15 @@ export default function LandingPage() {
     ];
   
   return (
-    <div className="relative min-h-screen">
+    <div className="relative min-h-screen bg-black">
 
-      <div className="h-screen w-full pt-[120px]"> {/* pt instead of margin on .mainhead! */}
+      {/* HERO — exactly ONE screen (h-screen, not min-h-screen!).
+          The ASCII background below is "absolute inset-0" anchored to THIS
+          section, so the horizon art always fills exactly the first
+          viewport and never stretches down the page. Everything after it
+          (definition, cards, footer) sits in normal flow BELOW the hero,
+          on the outer div's bg-black — like the subpages. */}
+      <div className="relative h-screen w-full pt-[120px]"> {/* pt instead of margin on .mainhead! */}
         {/*
           FIX: The ASCII background used to sit in normal flow and take up
           the full screen height, which pushed .mainhead below the visible
@@ -132,35 +140,48 @@ export default function LandingPage() {
             Team
           </Link>
         </nav>
+      </div>{/* HERO ends — definition, cards and footer scroll past it. */}
 
-        {/* DEFINITION SECTION — dictionary-style entry for "faber".
-            Styled to match the subtle navbar (small, semi-transparent
-            white, brightening on nothing — it's read-only text).
-            - relative + z-10: same stacking lesson as always — keeps it
-              above the absolutely positioned ASCII background.
+        {/* DEFINITION SECTION — dictionary-style entry for "faber",
+            revealed only when the user scrolls to it (<Reveal> below).
+            - The small barcode echo at the top shows at a glance what
+              the header logo actually spells. aria-hidden="true" marks
+              it decorative: screen readers already get "Faber" from the
+              logo, so this copy shouldn't be announced twice.
             - max-w-xl + mx-auto: constrains the line length so it reads
-              comfortably, centered.
-            - space-y-1: vertical gap between definition senses, without
-              margin-collapse risk (flex/grid-free siblings still work,
-              but Tailwind's spacing utilities are the habit anyway). */}
-        <div className="relative z-10 mx-auto mt-24 max-w-xl px-6 text-center">
-          <p className="text-sm text-white/80">
-            <span className="font-semibold text-white">fa·ber</span>
-            <span className="ml-2 text-white/50">/ˈfaːbər/</span>
-            <span className="ml-2 italic text-white/50">noun, Latin</span>
-          </p>
-          <ol className="mt-2 list-inside list-decimal space-y-1 text-sm text-white/60">
-            <li>
-              craftsman, smith — the building and creative human as an individual.
-            </li>
-            <li>
-              Faber Innovations sense: the one who ships what others only sketch.
-            </li>
-          </ol>
-        </div>
+              comfortably, centered. */}
+        <Reveal className="relative z-10">
+          <div className="mx-auto mt-24 max-w-xl px-6 text-center">
+            <p
+              className="barcode-logo text-4xl leading-none text-white/80"
+              aria-hidden="true"
+            >
+              Faber
+            </p>
+            <p className="mt-4 text-sm text-white/80">
+              <span className="font-semibold text-white">fa·ber</span>
+              <span className="ml-2 text-white/50">/ˈfaːbər/</span>
+              <span className="ml-2 italic text-white/50">noun, Latin</span>
+            </p>
+            <ol className="mt-2 list-inside list-decimal space-y-1 text-sm text-white/60">
+              <li>
+                craftsman, smith — one who builds things with their own hands.
+              </li>
+              <li>
+                StemBase sense: the one who ships what others only sketch.
+              </li>
+            </ol>
+          </div>
+        </Reveal>
         
+        {/* Cards reveal on scroll too — see <Reveal> comments above.
+            z-50 (not z-10): while DRAGGING, a card should float above
+            every other UI element. Common z-index ladder:
+              0-10  content      20  dropdowns      30  sticky headers
+              40  overlays       50  modals/dragging — always on top. */}
+        <Reveal className="relative z-50">
         <div>
-          <DraggableCardContainer className="relative mt-[374px] flex min-h-screen w-full items-center justify-center overflow-clip">
+          <DraggableCardContainer className="relative z-50 mt-[374px] flex min-h-screen w-full items-center justify-center overflow-clip">
             {/* NOTE: mt-[100px] is on the CONTAINER on purpose!
                 The children here (cards + sentence) are all "absolute",
                 and absolutely positioned children are immune to the
@@ -185,12 +206,13 @@ export default function LandingPage() {
             ))}
           </DraggableCardContainer>
          </div>
+        </Reveal>
 
-        <div>
-          {/*For the footer section later then...*/}
-        </div>
-        
-      </div>
+        {/* The footer placeholder from before — finally filled in.
+            It sits in normal flow BELOW the hero now, exactly like the
+            subpages, so its spacing just works with no extra padding. */}
+        <SiteFooter />
+
     </div>
   );
 }
