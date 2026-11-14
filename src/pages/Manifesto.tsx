@@ -42,9 +42,11 @@ export default function Manifesto() {
           Manifesto
         </h1>
         <p className="mt-4 text-lg text-neutral-400">
-          TODO: two or three sentences introducing what this page is —
-          the rules you hold yourselves to.
+          At Faber, we fircely believe in building products which not only enrich peoples lifes but also help them with becoming a better version of themselfes.
+          This belief empowers us to continously learn, build and fail. 
         </p>
+        <p className="mt-4 text-lg text-neutral-400">The core principles as they are displayed are assisting us with maintaining this path.</p>
+        <p className="mt-4 text-lg text-neutral-400">They are the way we build things.</p>
       </section>
 
       {/* The principles. flex row: ghost number left, text right —
