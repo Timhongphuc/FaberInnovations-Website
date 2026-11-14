@@ -15,28 +15,28 @@ const members = [
       "TODO: one short paragraph about who this is and what they do.",
     // TODO: swap in your own card images (front/back) when ready.
     frontImage:
-      "https://aqua-cheerful-octopus-393.mypinata.cloud/ipfs/bafybeifgalmxit5aner7yhmt43cvvntw5hw5omkyk4smvpqef2kv7sw7oa",
+      "https://aqua-cheerful-octopus-393.mypinata.cloud/ipfs/bafybeieqnfew2ujvfgcssjp2xozkh5wa7lxnpxkwu64jfyx3q4xyxuvhf4",
     backImage:
-      "https://aqua-cheerful-octopus-393.mypinata.cloud/ipfs/bafybeiex27nans5vvfawisiw6eyeczqk2qh6nbueob2gbwcbrq5bvlmbiq",
+      "https://aqua-cheerful-octopus-393.mypinata.cloud/ipfs/bafkreiahzjidzoqgm2o2wc5wishdobvs4gh7kbe5pru7ult23lw32ag2ai",
     cardColor: "#f6f8ff",
   },
   {
     name: "Filip Roessner",
     description: "TODO: one short paragraph about who this is and what they do.",
     frontImage:
-      "https://aqua-cheerful-octopus-393.mypinata.cloud/ipfs/bafybeifgalmxit5aner7yhmt43cvvntw5hw5omkyk4smvpqef2kv7sw7oa",
+      "https://aqua-cheerful-octopus-393.mypinata.cloud/ipfs/bafybeif3rp4yj6rhhlf6yst3jwxzrimej6uschwraikkmnsnjmqml7oa5m",
     backImage:
-      "https://aqua-cheerful-octopus-393.mypinata.cloud/ipfs/bafybeignfiavhdp3e57zzigb3lk6oam4exifggsshqr4jjlextjlqes3zm",
-    cardColor: "#1e3fd8",
+      "https://aqua-cheerful-octopus-393.mypinata.cloud/ipfs/bafkreihqgvhhza2k5o4yuumyvkhxvuzqmelj2hweejwfuelsxnzhvzagxm",
+    cardColor: "#f6f8ff",
   },
   {
     name: "Karl Grehn",
     description: "TODO: one short paragraph about who this is and what they do.",
     frontImage:
-      "https://aqua-cheerful-octopus-393.mypinata.cloud/ipfs/bafybeifgalmxit5aner7yhmt43cvvntw5hw5omkyk4smvpqef2kv7sw7oa",
+      "https://aqua-cheerful-octopus-393.mypinata.cloud/ipfs/bafybeifcfion2246ksjju2xnoqrwaz2vx26h5cto5dbb4cnqhx4tjuxdcm",
     backImage:
-      "https://aqua-cheerful-octopus-393.mypinata.cloud/ipfs/bafybeieemgilglimcwatfq7jifavny4pfjt7noftnvhrlffxzuyt6e6t4i",
-    cardColor: "#38bdf8",
+      "https://aqua-cheerful-octopus-393.mypinata.cloud/ipfs/bafkreigxuozqkl4zyzmdkgnhzgo7b66plakbng246cr7belsyne47sg5ka",
+    cardColor: "#f6f8ff",
   },
 ];
 
