@@ -25,7 +25,7 @@ const principles = [
   },
   {
     title: "Be crazy.",
-    text: "We are creatives, builders and developers. We can make a meaningful contribution to the world, but only if we're crazy enough to belive it. A concept that might sound simple at first, becomes simple as soon you decide to obsess over it.",
+    text: "We are creatives, builders and developers. We can make a meaningful contribution to the world, but only if we're crazy enough to belive it. A concept that might sound simple at first, becomes dangerously powerful as soon as you decide to obsess over it.",
   },
 ];
 
