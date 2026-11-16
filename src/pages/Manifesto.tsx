@@ -42,7 +42,7 @@ export default function Manifesto() {
           Manifesto
         </h1>
         <p className="mt-4 text-lg text-neutral-400">
-          At Faber, we fircely believe in building products which not only enrich peoples lifes but also help them with becoming a better version of themselfes.
+          At Faber, we fiercely believe in building products that not only enrich people's life's but also help them become a better version of themselves.
           This belief empowers us to continously learn, build and fail. 
           The core principles as they are displayed are assisting us with maintaining this path.
           They are the way we build things.
