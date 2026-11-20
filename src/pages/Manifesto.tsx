@@ -8,16 +8,16 @@ import { SiteFooter } from "~/components/SiteFooter";
  */
 const principles = [
   {
-    title: "Your life's work should never be focused on material success.",
+    title: "Your life's work should focus on putting humans first.",
     text: "Being an overall good human being and approaching everyone with loving kindness is, in our opinion, tables stakes for reaching remarkable milestones.",
   },
   {
     title: "Have fun.",
-    text: "Whenever we create something, we create because we feel deep devotion towards doing it. Others just can't compete with someone who is having fun.",
+    text: "Whenever we create something, we create because we feel deep devotion towards doing it. Only through this drive, we're able to feel this deep devotion.",
   },
   {
     title: "Enrich peoples life's.",
-    text: "Optimizing and improving the life's of other's is one of the most important reasons for creating products. We always ask: 'What can be done in order to improve the day of one single soul through software or hardware?'.",
+    text: "Optimizing and improving the lives of others is one of the most important reasons for creating products. We always ask: 'What can be done in order to improve the day of one single soul through software or hardware?'.",
   },
   {
     title: "Radical honesty.",
@@ -25,7 +25,7 @@ const principles = [
   },
   {
     title: "Be crazy.",
-    text: "We are creatives, builders and developers. We can make a meaningful contribution to the world, but only if we're crazy enough to belive it. A concept that might sound simple at first, becomes dangerously powerful as soon as you decide to obsess over it.",
+    text: "We are creatives, builders and developers. We are capable of making a meaningful contribution to the world, but only if we're crazy enough to belive it. A concept that might sound simple at first, becomes dangerously powerful as soon as you decide to apply it to your life.",
   },
 ];
 
@@ -42,9 +42,9 @@ export default function Manifesto() {
           Manifesto
         </h1>
         <p className="mt-4 text-lg text-neutral-400">
-          At Faber, we fiercely believe in building products that not only enrich people's life's but also help them become a better version of themselves.
+          At Faber, we fiercely believe in building products that not only enrich peoples lives but also help them become a better version of themselves.
           This belief empowers us to continously learn, build and fail. 
-          The core principles as they are displayed are assisting us with maintaining this path.
+          The core principles as they are displayed are helping us to maintain and cultivate this path.
           They are the way we build things.
         </p>
         {/* <p className="mt-4 text-lg text-neutral-400">The core principles as they are displayed are assisting us with maintaining this path.</p>
