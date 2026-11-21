@@ -12,7 +12,7 @@ const members = [
   {
     name: "Tim Seufert",
     description:
-      "TODO: one short paragraph about who this is and what they do.",
+      "I'm a passionate developer and hobbyist with a strong focus on developing well-designed, user friendly AI solutions. Furthermore I'm obsessed with crafting innovative systems and software products which enrich other people's lives through intelligent inference and data. I strongly believe that AI and ML powered systems will enhance the way we communicate, live and work — but only if we provide them with grounded data using retrieval-augmented generation.",
     // TODO: swap in your own card images (front/back) when ready.
     frontImage:
       "https://aqua-cheerful-octopus-393.mypinata.cloud/ipfs/bafybeieqnfew2ujvfgcssjp2xozkh5wa7lxnpxkwu64jfyx3q4xyxuvhf4",
@@ -22,7 +22,7 @@ const members = [
   },
   {
     name: "Filip Roessner",
-    description: "TODO: one short paragraph about who this is and what they do.",
+    description: "I enjoy figuring out how complex systems work from the ground up, whether that means writing software, setting up Linux servers, or building hardware prototypes. I tend to take a practical, math-driven approach to solving problems and like turning ideas into things that actually run.",
     frontImage:
       "https://aqua-cheerful-octopus-393.mypinata.cloud/ipfs/bafybeif3rp4yj6rhhlf6yst3jwxzrimej6uschwraikkmnsnjmqml7oa5m",
     backImage:
